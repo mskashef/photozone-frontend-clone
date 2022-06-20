@@ -1,0 +1,21 @@
+@import '../../constants/sass/functions';
+
+.SearchBox {
+  background-color: #ffffff22;
+  @include dimension(100%, 40px);
+  @include borderRadius(20px);
+  font-size: 15px;
+  @include row;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+}
+.input {
+  height: 100%;
+  padding-left: 10px;
+  flex: 1;
+  background: none;
+  border: none;
+  font-size: 15px;
+  color: white;
+}

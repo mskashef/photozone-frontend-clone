@@ -1,0 +1,38 @@
+@import '../../constants/sass/functions';
+.container {
+  margin: 10px;
+}
+.TextField fieldset {
+  border: 3px solid #ffffff;
+  @include borderRadius(30px);
+  // background-color: red;
+}
+.TextField:hover fieldset {
+  border: 3px solid #ffffff !important;
+  //background-color: red
+}
+.TextField * {
+  color: #ffffff !important;
+  font-weight: bold !important;
+}
+.TextField input {
+  color: #ffffff;
+}
+.TextField input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffff;
+  font-weight: bold;
+  opacity: 1; /* Firefox */
+}
+
+.TextField input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.TextField input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ffffff;
+  font-weight: bold;
+}

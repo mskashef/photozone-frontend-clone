@@ -1,0 +1,22 @@
+@import "../../constants/sass/functions";
+
+.Posts {
+  flex: 1;
+  //@include square(100%);
+  width: 100%;
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-bottom: 40px;
+}
+.noPosts {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 85px);
+  position: absolute;
+  @include noUserSelect;
+}

@@ -1,0 +1,8 @@
+@import "../../constants/sass/functions";
+
+.Page {
+  @include square(100%);
+  @include col;
+  flex: 1;
+  overflow: hidden;
+}

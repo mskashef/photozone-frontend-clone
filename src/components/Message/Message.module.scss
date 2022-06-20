@@ -1,0 +1,34 @@
+@import "../../constants/sass/functions";
+
+.MessageWrapper {
+  @include row;
+  justify-content: flex-start;
+}
+.Message {
+  padding: 5px;
+  margin: 5px;
+  //@include transform(scaleY(-1));
+}
+.MessageWrapper.me {
+  justify-content: flex-end;
+}
+.MessageWrapper .Message {
+  background-color: #DBFFF4;
+  @include borderRadius(0 10px 10px 10px);
+}
+.MessageWrapper.me .Message {
+  background-color: #FFF2DB;
+  @include borderRadius(10px 10px 0 10px);
+}
+.time {
+  text-align: right;
+  font-size: 13px;
+  margin-bottom: -5px;
+  margin-right: -3px;
+}
+.MessageWrapper .time {
+  color: #57AB91;
+}
+.MessageWrapper.me .time {
+  color: #FF9E7A;
+}

@@ -1,0 +1,70 @@
+@import '../../constants/sass/functions';
+
+.Page {
+  @include square(100%);
+  @include col;
+  flex: 1;
+  overflow: hidden;
+}
+
+.Post {
+  @include dimension(calc(100% - 20px), auto);
+  max-width: 400px;
+  position: relative;
+  @include col;
+  margin: 10px auto;
+}
+.leftSide {
+  //border: 1px solid red;
+  padding: 10px !important;
+  @include borderRadius(10px);
+  @include cardShadow;
+}
+.photo {
+  @include dimension(100%, auto);
+  // @include borderRadius(10px);
+}
+
+.details {
+  @include dimension(100%, 50px);
+  position: relative;
+  @include row;
+  padding: 10px 0;
+}
+.userContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.moreButton {
+  cursor: pointer;
+  padding: 0 0 0 30px;
+}
+.caption {
+  padding: 10px 0;
+  max-width: 500px;
+  word-wrap: break-word;
+}
+
+.loading {
+  @include borderRadius(10px);
+  height: 200px;
+  background: #f5f5f5;
+}
+
+@media (min-width: 700px) {
+  .Post {
+    max-width: 5000px;
+    @include row;
+    justify-content: center;
+  }
+  .leftSide,
+  .rightSide {
+    display: inline-block;
+    padding: 0 10px;
+  }
+  .photo {
+    max-width: 400px;
+  }
+}

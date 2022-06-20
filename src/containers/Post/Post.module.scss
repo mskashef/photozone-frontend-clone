@@ -1,0 +1,43 @@
+@import '../../constants/sass/functions';
+
+.Post {
+  background-color: black;
+  // @include dimension(100%, 300px);
+  width: 100%;
+  min-height: 300px;
+  max-width: 400px;
+  position: relative;
+  @include col;
+  margin: 10px;
+}
+
+.photo {
+  // flex: 1;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  height: 200px !important;
+  width: 100% !important;
+}
+
+.details {
+  background-color: #000;
+  @include dimension(100%, 50px);
+  position: relative;
+  @include row;
+  padding: 0 15px;
+}
+
+.userContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  // padding-left: -40px;
+  margin-left: -10px;
+}
+
+.moreButton {
+  cursor: pointer;
+  padding-left: 20px;
+}

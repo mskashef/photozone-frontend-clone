@@ -1,0 +1,16 @@
+@import '../../constants/sass/functions';
+
+.Tag {
+  background-color: #444;
+  @include dimension(auto, 25px);
+  @include borderRadius(5px);
+  @include row;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 0 5px;
+  display: inline-block;
+  margin-right: 5px;
+}

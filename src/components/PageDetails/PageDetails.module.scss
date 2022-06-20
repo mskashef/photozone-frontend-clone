@@ -1,0 +1,23 @@
+@import '../../constants/sass/functions';
+
+.PageDetails {
+  @include dimension(100%, 70px);
+  // background-color: #FFF2D9;
+  @include borderRadius(25px 0);
+  @include row;
+  justify-content: center;
+  margin: 30px 0;
+  position: relative;
+}
+.PageDetails > div {
+  margin: 0 5px;
+  @include col;
+  justify-content: center;
+}
+.PageDetails > div > div {
+  text-align: center;
+  color: white;
+}
+.col {
+  @include col;
+}

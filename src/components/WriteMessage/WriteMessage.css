@@ -1,0 +1,33 @@
+.writeMessage {
+    /*border: 1px solid red;*/
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 10px 10px 10px;
+    align-items: center;
+    padding: 0 2px;
+    -webkit-box-shadow: 0 3px 10px 0 rgba(0,0,0,0.1);
+    -moz-box-shadow:    0 3px 10px 0 rgba(0,0,0,0.1);
+    box-shadow:         0 3px 10px 0 rgba(0,0,0,0.1);
+}
+.writeMessage_MessageContainer {
+    background: none;
+    width: 70%;
+    flex: 1;
+    border: none;
+    resize: none;
+    padding: 5px;
+    outline: none;
+    font-size: 18px;
+    height: 100%;
+}
+.sendMessageButton, .clipButton, .toggleEmojiButton {
+    cursor: pointer;
+    height: 35px;
+}
+.sendMessageButton {}
+.clipButton {}
+.toggleEmojiButton {}

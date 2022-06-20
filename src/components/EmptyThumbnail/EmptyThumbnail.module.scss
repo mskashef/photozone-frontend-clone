@@ -1,0 +1,28 @@
+@import '../../constants/sass/functions';
+
+.Thumbnail {
+  overflow: hidden;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-color: #f5f5f5;
+  position: relative;
+  margin: 1px;
+  width: calc(33% - 6px);
+  height: 0;
+}
+@media screen and (min-width: 500px) {
+  .Thumbnail {
+    width: calc(25% - 6px);
+  }
+}
+@media screen and (min-width: 700px) {
+  .Thumbnail {
+    width: calc(20% - 6px);
+  }
+}
+@media screen and (min-width: 900px) {
+  .Thumbnail {
+    width: calc(10% - 6px);
+  }
+}

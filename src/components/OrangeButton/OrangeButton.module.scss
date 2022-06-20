@@ -1,0 +1,11 @@
+@import "../../constants/sass/functions";
+
+.OrangeButton {
+  background-color: #FBAB18;
+  @include dimension(100%, 40px);
+  @include borderRadius(20px);
+  border: none;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 15px;
+}

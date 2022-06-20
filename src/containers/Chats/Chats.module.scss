@@ -1,0 +1,29 @@
+@import '../../constants/sass/functions';
+
+.userContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.usersContainer {
+  @include col;
+  padding-bottom: 50px;
+}
+.usersContainer > * {
+  margin: 10px 0 0 10px;
+}
+.line {
+  background-color: #ffffff22;
+  height: 1px;
+  width: calc(100% - 20px);
+}
+.noPosts {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 85px);
+  position: absolute;
+  @include noUserSelect;
+}

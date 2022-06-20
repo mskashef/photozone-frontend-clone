@@ -1,0 +1,36 @@
+@import '../../constants/sass/functions';
+
+.TabSelection {
+  @include dimension(100%, 40px);
+  @include row;
+  justify-content: space-evenly;
+  margin-bottom: 5px;
+  @include boxShadow(0 5px 5px rgba(0, 0, 0, 0.1));
+  background-color: black;
+}
+
+.tab {
+  flex: 1;
+  position: relative;
+  text-align: center;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  border-bottom: 1px solid #444;
+}
+.tab.active {
+  font-weight: bold;
+}
+.tab.active:after {
+  content: '';
+  display: block;
+  @include dimension(100%, 5px);
+  background-color: gray;
+  position: absolute;
+  left: 0;
+  top: calc(100% - 5px);
+  @include borderRadius(5px);
+}

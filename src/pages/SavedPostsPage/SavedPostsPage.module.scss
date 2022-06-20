@@ -1,0 +1,69 @@
+@import "../../constants/sass/functions";
+
+.Page {
+  @include square(100%);
+  @include col;
+  flex: 1;
+  overflow: hidden;
+}
+
+
+.Post {
+  @include dimension(calc(100% - 20px), 300px);
+  //max-width: 400px;
+  position: relative;
+  @include col;
+  margin: 10px;
+}
+
+.photo {
+  @include dimension(100%, auto);
+  @include borderRadius(10px);
+}
+
+.details {
+  @include borderRadius(40px 0 40px 40px);
+  @include dimension(100%, 80px);
+  position: relative;
+  @include row;
+  padding: 10px 0;
+}
+.userContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.moreButton {
+  cursor: pointer;
+}
+
+.caption {
+  padding: 10px 0;
+}
+
+.postsContainer {
+  @include row;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.postsContainer > * {
+  margin: 5px;
+}
+.usersContainer {
+  @include col;
+  padding-bottom: 50px;
+}
+.usersContainer > * {
+  margin: 10px 0 0 10px;
+}
+
+.about {
+  color: #777777;
+  margin: 20px 0;
+  padding: 0 10px;
+}
+.buttons {
+  @include row;
+}

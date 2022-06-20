@@ -1,0 +1,19 @@
+@import "../../constants/sass/functions";
+
+.AuthButton {
+  background-color: transparent;
+  @include dimension(300px, 50px);
+  @include borderRadius(30px);
+  cursor: pointer;
+  font-size: 15px;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin-top: 10px;
+  min-width: 300px;
+  max-width: 400px;
+}
+.filled {
+  background-color: #FFFFFF;
+  color: #B15C8B;
+}

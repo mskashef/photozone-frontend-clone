@@ -1,0 +1,54 @@
+@import '../../constants/sass/functions';
+.TitledPic {
+  @include row;
+  align-items: center;
+}
+.TitleContainer {
+  @include col;
+  justify-content: center;
+  padding-left: 10px;
+}
+.TitledPic > * {
+  margin: 0;
+}
+.img {
+  @include borderRadius(100%);
+  @include square(40px);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-color: #444;
+}
+
+.title {
+  font-weight: bold;
+  color: #777777;
+  margin: 0;
+  font-size: 15px;
+  min-height: 20px;
+  min-width: 60px;
+}
+.caption {
+  color: #ffffff;
+  margin: 0;
+  font-size: 15px;
+  min-width: 60px;
+  min-height: 20px;
+}
+.gray {
+  margin: 3px 0;
+  background-color: #444;
+  @include borderRadius(5px);
+}
+.badgeWrapper {
+  flex: 1;
+  @include row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.badge {
+  background-color: #0f0;
+  @include square(15px);
+  @include borderRadius(100%);
+  margin-right: 10px;
+}

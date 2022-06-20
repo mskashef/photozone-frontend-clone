@@ -1,0 +1,28 @@
+@import '../../constants/sass/functions';
+
+.logo {
+  margin: auto;
+}
+.pageBodyInsideWrapper {
+  @include col;
+  align-items: center;
+}
+.PhotoZone {
+  color: #ffffff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  font-size: 30px;
+  font-weight: bold;
+}
+.caption {
+  color: #ffffff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  margin-top: 10px;
+}
+.question {
+  width: 300px;
+  text-align: right;
+  color: #ffffff;
+  // font-weight: bold;
+  cursor: pointer;
+  margin: 10px 0;
+}
